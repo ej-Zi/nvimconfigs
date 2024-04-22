@@ -3,12 +3,13 @@ lua require("coc")
 lua require("keymap")
 
 set number 
-set relativenumber 
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set autochdir
 
 let g:coc_snippet_next = "<tab>"
 let g:blamer_enabled = 1
 
-colorscheme dracula
+colorscheme tokyonight-storm 
+

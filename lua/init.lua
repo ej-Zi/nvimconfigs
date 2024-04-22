@@ -12,6 +12,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = "#"
 
+vim.api.nvim_create_autocmd("TermClose", {
+   callback = function()
+      vim.cmd("close")
+   end
+})
+
 require("lazy").setup("plugins")
 
 require'nvim-treesitter.configs'.setup {
@@ -41,15 +47,20 @@ require("telescope").setup{
 
 require("telescope").load_extension("fzf")
 
-require("nvim-tree").setup(
+--[[ require("nvim-tree").setup(
     {
         update_focused_file = {
             enable = true
-        }
+        },
     }
 )
+ ]]
+
+
 
 require("scrollbar").setup()
+
+require("ibl").setup{scope = {enabled = false}}
 
 require('lualine').setup {
   options = {
