@@ -47,15 +47,6 @@ require("telescope").setup{
 
 require("telescope").load_extension("fzf")
 
---[[ require("nvim-tree").setup(
-    {
-        update_focused_file = {
-            enable = true
-        },
-    }
-)
- ]]
-
 require("neo-tree").setup({
     close_if_last_window = true,
     default_component_configs = {

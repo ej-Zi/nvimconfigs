@@ -11,6 +11,7 @@ return {
         priority = 1000,
         opts = {},
     },
+    'yorickpeterse/vim-paper',
     --------------------------------
 
     "petertriho/nvim-scrollbar",
