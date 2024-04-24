@@ -1,29 +1,46 @@
 return {
-    "mhinz/vim-startify",
-    "APZelos/blamer.nvim",
+    "ej-Zi/vim-fishify",
+
+    ---colorschemes----------------
     "Mofiqul/dracula.nvim",
     "catppuccin/nvim",
-    "yorickpeterse/vim-paper",
     "pineapplegiant/spaceduck",
     {
-      "folke/tokyonight.nvim",
-      lazy = false,
-      priority = 1000,
-      opts = {},
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
     },
+    --------------------------------
 
     "petertriho/nvim-scrollbar",
 
+    ---eye candy-------------------
     {
         "lukas-reineke/indent-blankline.nvim",
         main = "ibl",
         opts = {}
     },
     {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    --------------------------------
+
+    ---formatting quality of life---
+    {
         "numToStr/Comment.nvim",
         opts={},
         lazy=false
     },
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+    },
+    --------------------------------
+
+    ---LSP, Syntax------------------
     {
         "nvim-treesitter/nvim-treesitter",
         build=":TSUpdate"
@@ -32,6 +49,9 @@ return {
         "neoclide/coc.nvim",
         branch="release"
     },
+    --------------------------------
+
+    ---file management---------------
     {
         "nvim-telescope/telescope.nvim",
         dependencies={"nvim-lua/plenary.nvim"}
@@ -49,17 +69,18 @@ return {
        branch = "v3.x",
        dependencies = {
          "nvim-lua/plenary.nvim",
-         "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+         "nvim-tree/nvim-web-devicons",
          "MunifTanjim/nui.nvim",
        }
     },
-    {
-        'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' }
-    },
+    -----------------------------------
+
+    ---git---------------------------
+    "APZelos/blamer.nvim",
     {
         'akinsho/git-conflict.nvim',
         version = "*",
         config = true
     },
+    ---------------------------------
 }
