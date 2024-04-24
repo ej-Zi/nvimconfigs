@@ -60,10 +60,6 @@ return {
         "nvim-telescope/telescope-fzf-native.nvim",
         build="make"
     },
-       --[[  {
-            "nvim-tree/nvim-tree.lua",
-            dependencies={"nvim-tree/nvim-web-devicons"}
-        }, ]]
     {
        "nvim-neo-tree/neo-tree.nvim",
        branch = "v3.x",

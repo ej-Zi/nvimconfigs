@@ -57,7 +57,28 @@ require("telescope").load_extension("fzf")
  ]]
 
 require("neo-tree").setup({
-    close_if_last_window = true
+    close_if_last_window = true,
+    default_component_configs = {
+        git_status = {
+            symbols = {
+                modified = "M",
+                untracked = "?",
+            }
+        },
+    },
+    window = {
+        width = 30,
+    },
+    filesystem = {
+        follow_current_file = {
+            enabled = true,
+        }
+    },
+    buffers = {
+        follow_current_file = {
+            enabled = true
+        }
+    }
 })
 
 require("scrollbar").setup()

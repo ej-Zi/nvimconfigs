@@ -10,9 +10,9 @@ map("n", "<leader>s", ":Startify<CR>")
 
 map("n", "<leader>f", ":Telescope find_files<CR>")
 map("n", "<leader>z", ":Telescope live_grep<CR>")
+map("n", "<leader>b", ":Telescope buffers<CR>")
 
---[[ map("n", "<leader>e", ":NvimTreeFindFileToggle<CR>") ]]
-map("n", "<leader>e", ":Neotree toggle<CR>:Neotree reveal_force_cwd<CR>")
+map("n", "<leader>e", ":Neotree reveal_force_cwd<CR>")
 
 map("n", "gs", ":call CocAction('jumpDefinition', 'split')<CR>")
 
@@ -24,4 +24,5 @@ map("n", "<A-l>", ":wincmd l<CR>")
 map("n", "<A-h>", ":wincmd h<CR>")
 map("n", "<A-w>", "<C-w>w")
 
-map("i", "<C-Backspace>", "<C-w>")
+map("i","<C-Backspace>", "<C-w>")
+map("i","<C-Del>", "<C-o>dw")
