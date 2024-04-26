@@ -59,6 +59,9 @@ require("neo-tree").setup({
     },
     window = {
         width = 30,
+        mappings = {
+            ["P"] = {"toggle_preview", config = {use_image_nvim = true}},
+        }
     },
     filesystem = {
         follow_current_file = {

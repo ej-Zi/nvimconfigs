@@ -52,6 +52,14 @@ return {
     },
     --------------------------------
 
+    {
+        "lervag/vimtex",
+        lazy = false,
+        init = function()
+        -- VimTeX configuration goes here
+        end
+    },
+
     ---file management---------------
     {
         "nvim-telescope/telescope.nvim",
