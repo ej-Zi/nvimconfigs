@@ -7,6 +7,7 @@ local function map(mode, lhs, rhs, opts)
 end
 
 map("n", "<leader>s", ":Startify<CR>")
+map("n", ":Q", ":q<CR>")
 
 map("n", "<leader>f", ":Telescope find_files<CR>")
 map("n", "<leader>z", ":Telescope live_grep<CR>")
@@ -17,7 +18,6 @@ map("n", "<leader>e", ":Neotree reveal_force_cwd<CR>")
 map("n", "gs", ":call CocAction('jumpDefinition', 'split')<CR>")
 
 map("n", "<leader>t", ":bo split +term<CR>")
-
 map("t", "<ESC>", "<C-\\><C-N>")
 
 map("n", "<A-l>", ":wincmd l<CR>")

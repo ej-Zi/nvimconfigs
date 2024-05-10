@@ -14,9 +14,9 @@ set autochdir
 
 let g:coc_snippet_next = "<tab>"
 let g:blamer_enabled = 1
+
 let g:startify_fortune_use_unicode = 1
+let g:startify_bookmarks = [{"c": "~/.config/nvim/init.vim"}, {"f": "~/INB21/4_Semester/FOP/sose24/slide98.hs"}]
 
-let g:vimtex_general_viewer = "evince"
-
-colorscheme tokyonight-storm 
+colorscheme catppuccin-macchiato 
 

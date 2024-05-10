@@ -50,6 +50,7 @@ return {
         "neoclide/coc.nvim",
         branch="release"
     },
+    "dense-analysis/ale",
     --------------------------------
 
     {

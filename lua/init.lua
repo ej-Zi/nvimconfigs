@@ -25,7 +25,9 @@ require'nvim-treesitter.configs'.setup {
     auto_install = true,
 
     highlight = {
-        enable = true
+        enable = true,
+        disable = {"latex"},
+        additional_vim_regex_highlighting = {"latex"},
     }
 }
 
@@ -64,15 +66,12 @@ require("neo-tree").setup({
         }
     },
     filesystem = {
-        follow_current_file = {
-            enabled = true,
-        }
+        bind_to_cwd = true,
+        cwd_target = {
+            sidebar = "tab",
+            current = "window"
+        },
     },
-    buffers = {
-        follow_current_file = {
-            enabled = true
-        }
-    }
 })
 
 require("scrollbar").setup()
